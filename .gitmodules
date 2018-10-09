@@ -1,0 +1,3 @@
+[submodule "Submodules/RoamToolKit"]
+	path = Submodules/RoamToolKit
+	url = https://guilhermeJay@github.com/Roamltd/RoamToolkit.git
