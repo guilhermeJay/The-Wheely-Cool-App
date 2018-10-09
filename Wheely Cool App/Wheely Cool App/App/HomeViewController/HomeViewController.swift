@@ -34,7 +34,11 @@ class HomeViewController: UIViewController {
         return homeView.tableView
     }
 
-    private var options: [String] = ["Option 1", "Option 2", "Option 3", "Option 4"]
+    private var options: [String] = ["Option 1", "Option 2", "Option 3", "Option 4"] {
+        didSet {
+            homeView.startButton.isEnabled = options.count > 0
+        }
+    }
 
     // MARK: - View Lifecycle
 
@@ -57,6 +61,7 @@ class HomeViewController: UIViewController {
 
         homeView.startButton.addTarget(self, action: #selector(onStartButtonTapped), for: .touchUpInside)
         homeView.addOptionButton.addTarget(self, action: #selector(onAddOptionButtonTapped), for: .touchUpInside)
+        homeView.deleteAllButton.addTarget(self, action: #selector(onDeleteAllButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -113,7 +118,19 @@ extension HomeViewController: UITableViewDataSource {
 private extension HomeViewController {
 
     @objc private func onStartButtonTapped() {
+        print("start")
+    }
 
+    @objc private func onDeleteAllButtonTapped() {
+        var indexPaths: [IndexPath] = []
+        for index in 0..<options.count {
+            indexPaths.append(IndexPath(row: index, section: 0))
+        }
+
+        tableView.beginUpdates()
+        options.removeAll()
+        tableView.deleteRows(at: indexPaths, with: .left)
+        tableView.endUpdates()
     }
 
     @objc private func onAddOptionButtonTapped() {

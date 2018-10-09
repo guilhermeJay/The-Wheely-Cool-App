@@ -12,6 +12,7 @@ private extension String {
     static let title = NSLocalizedString("Enter the options", comment: "Home Screen title")
     static let startButtonTitle = NSLocalizedString("Start", comment: "Start button title")
     static let addOptionButtonTitle = NSLocalizedString("Add option", comment: "Add option button title")
+    static let deleteAllButtonTitle = NSLocalizedString("Delete all", comment: "Delete all button title")
 }
 
 class HomeView: UIView {
@@ -34,6 +35,7 @@ class HomeView: UIView {
         addSubview(startButton)
 
         floatingHeaderView.addTrailingView(addOptionButton, padding: .medium)
+        floatingHeaderView.addLeadingView(deleteAllButton, padding: .medium)
 
         tableView.tableHeaderView = headerView
 
@@ -85,6 +87,14 @@ class HomeView: UIView {
         return result
     }()
 
+    let deleteAllButton: UIButton = {
+        let result = UIButton()
+        result.setTitle(.deleteAllButtonTitle, for: .normal)
+        result.setTitleColor(.darkText, for: .normal)
+        result.translatesAutoresizingMaskIntoConstraints = false
+        return result
+    }()
+
     lazy private (set) var floatingHeaderView: FloatingHeaderView = {
         let result = FloatingHeaderView(bigTitleHeight: headerView.height)
         result.title = .title
@@ -103,6 +113,7 @@ class HomeView: UIView {
         let result = UIButton()
         result.setTitle(.startButtonTitle, for: .normal)
         result.setTitleColor(.darkText, for: .normal)
+        result.setTitleColor(UIColor.darkText.withAlphaComponent(0.5), for: .disabled)
         result.backgroundColor = .white
         result.layer.cornerRadius = 10
         result.layer.borderWidth = 1
