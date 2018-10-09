@@ -16,7 +16,7 @@ private extension String {
 
 class HomeView: UIView {
 
-    private enum Sizing {
+    enum Sizing {
         static let floatingHeaderViewHeight: CGFloat = 44
         static let horizontalPadding: CGFloat = 20
         static let headerViewSize: CGSize = CGSize(width: UIScreen.main.bounds.width, height: 55)
