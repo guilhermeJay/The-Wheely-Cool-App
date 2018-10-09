@@ -14,6 +14,11 @@
 		4700DDB4216D438B00C7E022 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDB3216D438B00C7E022 /* HomeView.swift */; };
 		4700DDB7216D46A500C7E022 /* RoamSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4700DDB5216D468500C7E022 /* RoamSwiftKit.framework */; };
 		4700DDB8216D46A500C7E022 /* RoamSwiftKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4700DDB5216D468500C7E022 /* RoamSwiftKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4700DDBC216D488700C7E022 /* WheelyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDBB216D488700C7E022 /* WheelyButton.swift */; };
+		4700DDBE216D493F00C7E022 /* FloatingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDBD216D493F00C7E022 /* FloatingHeaderView.swift */; };
+		4700DDC1216D49ED00C7E022 /* UIScrollView+Wheely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC0216D49ED00C7E022 /* UIScrollView+Wheely.swift */; };
+		4700DDC3216D4A4900C7E022 /* String+Wheely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC2216D4A4900C7E022 /* String+Wheely.swift */; };
+		4700DDC5216D4A9000C7E022 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC4216D4A9000C7E022 /* Constants.swift */; };
 		FC94492A73F6F4946095B404 /* Pods_Wheely_Cool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA4CDF5F7A09E8D8B2EA01C /* Pods_Wheely_Cool_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,11 @@
 		4700DDB1216D437500C7E022 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4700DDB3216D438B00C7E022 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4700DDB5216D468500C7E022 /* RoamSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RoamSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4700DDBB216D488700C7E022 /* WheelyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyButton.swift; sourceTree = "<group>"; };
+		4700DDBD216D493F00C7E022 /* FloatingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingHeaderView.swift; sourceTree = "<group>"; };
+		4700DDC0216D49ED00C7E022 /* UIScrollView+Wheely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Wheely.swift"; sourceTree = "<group>"; };
+		4700DDC2216D4A4900C7E022 /* String+Wheely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Wheely.swift"; sourceTree = "<group>"; };
+		4700DDC4216D4A9000C7E022 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EEA4CDF5F7A09E8D8B2EA01C /* Pods_Wheely_Cool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheely_Cool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +101,7 @@
 			children = (
 				4700DDA2216D42BC00C7E022 /* LaunchScreen.storyboard */,
 				4700DDA5216D42BC00C7E022 /* Info.plist */,
+				4700DDC4216D4A9000C7E022 /* Constants.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -98,7 +109,9 @@
 		4700DDAC216D430400C7E022 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4700DDBF216D49D400C7E022 /* Extensions */,
 				4700DDAD216D430C00C7E022 /* App Delegate */,
+				4700DDBA216D486300C7E022 /* Custom Views */,
 				4700DDB0216D435B00C7E022 /* HomeViewController */,
 			);
 			path = App;
@@ -127,6 +140,24 @@
 				4700DDB3216D438B00C7E022 /* HomeView.swift */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		4700DDBA216D486300C7E022 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4700DDBD216D493F00C7E022 /* FloatingHeaderView.swift */,
+				4700DDBB216D488700C7E022 /* WheelyButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		4700DDBF216D49D400C7E022 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4700DDC0216D49ED00C7E022 /* UIScrollView+Wheely.swift */,
+				4700DDC2216D4A4900C7E022 /* String+Wheely.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A7C41FE128B3B75F812C4A21 /* Pods */ = {
@@ -159,6 +190,7 @@
 				4700DD93216D42BA00C7E022 /* Frameworks */,
 				4700DD94216D42BA00C7E022 /* Resources */,
 				4700DDB9216D46A500C7E022 /* Embed Frameworks */,
+				4700DDC6216D5E4900C7E022 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -215,6 +247,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4700DDC6216D5E4900C7E022 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		80D05CB0FDDF2B108825B55C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4700DDBE216D493F00C7E022 /* FloatingHeaderView.swift in Sources */,
+				4700DDC1216D49ED00C7E022 /* UIScrollView+Wheely.swift in Sources */,
 				4700DDB4216D438B00C7E022 /* HomeView.swift in Sources */,
 				4700DD9A216D42BA00C7E022 /* AppDelegate.swift in Sources */,
 				4700DDB2216D437500C7E022 /* HomeViewController.swift in Sources */,
+				4700DDC3216D4A4900C7E022 /* String+Wheely.swift in Sources */,
+				4700DDBC216D488700C7E022 /* WheelyButton.swift in Sources */,
+				4700DDC5216D4A9000C7E022 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
