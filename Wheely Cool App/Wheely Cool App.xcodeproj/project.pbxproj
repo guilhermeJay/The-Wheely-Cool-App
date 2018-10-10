@@ -19,6 +19,8 @@
 		4700DDC1216D49ED00C7E022 /* UIScrollView+Wheely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC0216D49ED00C7E022 /* UIScrollView+Wheely.swift */; };
 		4700DDC3216D4A4900C7E022 /* String+Wheely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC2216D4A4900C7E022 /* String+Wheely.swift */; };
 		4700DDC5216D4A9000C7E022 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDC4216D4A9000C7E022 /* Constants.swift */; };
+		4700DDCB216D67A000C7E022 /* SpinWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDCA216D67A000C7E022 /* SpinWheelViewController.swift */; };
+		4700DDCF216D68CF00C7E022 /* SpinWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4700DDCE216D68CF00C7E022 /* SpinWheelView.swift */; };
 		FC94492A73F6F4946095B404 /* Pods_Wheely_Cool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA4CDF5F7A09E8D8B2EA01C /* Pods_Wheely_Cool_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		4700DDC0216D49ED00C7E022 /* UIScrollView+Wheely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Wheely.swift"; sourceTree = "<group>"; };
 		4700DDC2216D4A4900C7E022 /* String+Wheely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Wheely.swift"; sourceTree = "<group>"; };
 		4700DDC4216D4A9000C7E022 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4700DDCA216D67A000C7E022 /* SpinWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinWheelViewController.swift; sourceTree = "<group>"; };
+		4700DDCE216D68CF00C7E022 /* SpinWheelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinWheelView.swift; sourceTree = "<group>"; };
 		EEA4CDF5F7A09E8D8B2EA01C /* Pods_Wheely_Cool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheely_Cool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 				4700DDAD216D430C00C7E022 /* App Delegate */,
 				4700DDBA216D486300C7E022 /* Custom Views */,
 				4700DDB0216D435B00C7E022 /* HomeViewController */,
+				4700DDC9216D678200C7E022 /* Wheel */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -158,6 +163,15 @@
 				4700DDC2216D4A4900C7E022 /* String+Wheely.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4700DDC9216D678200C7E022 /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				4700DDCA216D67A000C7E022 /* SpinWheelViewController.swift */,
+				4700DDCE216D68CF00C7E022 /* SpinWheelView.swift */,
+			);
+			path = Wheel;
 			sourceTree = "<group>";
 		};
 		A7C41FE128B3B75F812C4A21 /* Pods */ = {
@@ -291,9 +305,11 @@
 			files = (
 				4700DDBE216D493F00C7E022 /* FloatingHeaderView.swift in Sources */,
 				4700DDC1216D49ED00C7E022 /* UIScrollView+Wheely.swift in Sources */,
+				4700DDCF216D68CF00C7E022 /* SpinWheelView.swift in Sources */,
 				4700DDB4216D438B00C7E022 /* HomeView.swift in Sources */,
 				4700DD9A216D42BA00C7E022 /* AppDelegate.swift in Sources */,
 				4700DDB2216D437500C7E022 /* HomeViewController.swift in Sources */,
+				4700DDCB216D67A000C7E022 /* SpinWheelViewController.swift in Sources */,
 				4700DDC3216D4A4900C7E022 /* String+Wheely.swift in Sources */,
 				4700DDBC216D488700C7E022 /* WheelyButton.swift in Sources */,
 				4700DDC5216D4A9000C7E022 /* Constants.swift in Sources */,

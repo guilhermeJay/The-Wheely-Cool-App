@@ -29,6 +29,7 @@ class HomeView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
 
         addSubview(tableView)
         addSubview(floatingHeaderView)

@@ -50,7 +50,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         options = []
-        for index in 0...30 {
+        for index in 0..<20 {
             options.append("Option \(index)")
         }
 
@@ -118,7 +118,7 @@ extension HomeViewController: UITableViewDataSource {
 private extension HomeViewController {
 
     @objc private func onStartButtonTapped() {
-        print("start")
+        present(SpinWheelViewController(options: options), animated: true, completion: nil)
     }
 
     @objc private func onDeleteAllButtonTapped() {
